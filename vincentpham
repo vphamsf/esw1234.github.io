@@ -1,0 +1,26 @@
+<html>
+   <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">        <title>Test Page</title>
+   </head>
+   <body>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = ''; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DB0000000gb6A',
+				'Vince_test_4_MIAW',
+				'https://deevo-demo.my.site.com/ESWVincetest4MIAW1663027834213',
+				{
+					scrt2URL: 'https://deevo-demo.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://deevo-demo.my.site.com/ESWVincetest4MIAW1663027834213/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+   </body>
+</html>
